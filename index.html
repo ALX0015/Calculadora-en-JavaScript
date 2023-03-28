@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculadora Web</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="calculator">
+    <div class="display-container">
+      <input type="text" id="display" class="display" disabled>
+    </div>
+    <div class="keypad-container">
+      <button class="operator" onclick="limpiarDisplay()">C</button>
+      <button class="operator" onclick="retroceso()">&larr;</button>
+      <button class="operator" onclick="porcentaje()">%</button>
+      <button class="operator" onclick="operador('/')">&divide;</button>
+      <button onclick="digito('7')">7</button>
+      <button onclick="digito('8')">8</button>
+      <button onclick="digito('9')">9</button>
+      <button class="operator" onclick="operador('*')">&times;</button>
+      <button onclick="digito('4')">4</button>
+      <button onclick="digito('5')">5</button>
+      <button onclick="digito('6')">6</button>
+      <button class="operator" onclick="operador('-')">&minus;</button>
+      <button onclick="digito('1')">1</button>
+      <button onclick="digito('2')">2</button>
+      <button onclick="digito('3')">3</button>
+
+      <button class="operator" onclick="operador('+')">+</button>
+      <button onclick="digito('0')">0</button>
+      <button onclick="digito('.')">.</button>
+    
+      <button class="operator" onclick="calcular()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
